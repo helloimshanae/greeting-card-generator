@@ -13,7 +13,7 @@ let closings = [
 ];
 
 // define style of card
-let style = prompt("Fancy or silly?");
+let style = prompt("Fancy or Silly?");
 
 // define random closing
 function randomNumber(a, b) {
@@ -22,7 +22,7 @@ function randomNumber(a, b) {
 
 // define first card
 function makeCard() {
-  if (style === "fancy") {
+  if (style.toLowerCase() === "fancy") {
 	  console.log("\nMeow " + name + ",");
   } else {
 	  console.log("\nYo " + name + "!");
