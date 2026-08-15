@@ -12,6 +12,9 @@ let closings = [
 	"Love, Wubzy",
 ];
 
+// define style of card
+let style = prompt("Fancy or silly?");
+
 // define random closing
 function randomNumber(a, b) {
   return Math.floor(Math.random() * (b - a + 1)) + a;
@@ -19,8 +22,12 @@ function randomNumber(a, b) {
 
 // define first card
 function makeCard() {
-  console.log("\nMeow " + name + ",");
-  console.log("Wubzy has officially declared you " + adjective + " enough to be responsible for the " + noun + "!");
+  if (style === "fancy") {
+	  console.log("\nMeow " + name + ",");
+  } else {
+	  console.log("\nYo " + name + "!");
+  }
+  console.log("\nWubzy has officially declared you " + adjective + " enough to be responsible for the " + noun + "!");
   console.log("You must report to the " + place + " for your first day. Travel arrangements will be emailed shortly.");
   console.log("Wubzy has also approved your emergency supply of " + food + " to celebrate!");
   console.log("DO NOT disappoint the cat.\n");
