@@ -10,6 +10,7 @@ let closings = [
 	"Meow for now.",
 	"Sincerely, the cat",
 	"Love, Wubzy",
+	"Stay Chaotic",
 ];
 
 // define style of card
