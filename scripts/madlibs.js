@@ -5,35 +5,53 @@ let noun = prompt("Noun:");
 let place = prompt("Favorite Place:");
 let food = prompt("Favorite Food:");
 
-// define closing messages
-let closings = [
-	"Meow for now.",
-	"Sincerely, the cat",
-	"Love, Wubzy",
-	"Stay Chaotic",
-];
-
 // define style of card
 let style = prompt("Fancy or Silly?");
 
-// define random closing
+// define fancy closing messages
+let fancyClosings = [
+	"Meow for now.",
+	"Sincerely, the cat",
+	"Love, Wubzy",
+];
+// define silly closing messages
+let sillyClosings = [
+	"Stay Pawwsome",
+	"Don't forget the snackies",
+	"Stay Chaotic",
+];
+
+// define random closing message
 function randomNumber(a, b) {
   return Math.floor(Math.random() * (b - a + 1)) + a;
 }
 
 // define first card
 function makeCard() {
+	  // choose greeting based on card style
   if (style.toLowerCase() === "fancy") {
-	  console.log("\nMeow " + name + ",");
-  } else {
-	  console.log("\nYo " + name + "!");
-  }
+	console.log("\nMeow " + name + ",");
+} else {
+	console.log("\nYo " + name + "!");
+}
+  
+// choose closing list based on card style
+  let closingList;
+  
+  if (style.toLowerCase() === "fancy") {
+	closingList = fancyClosings;
+} else {
+	closingList = sillyClosings;
+}
+// greeting card contents
   console.log("\nWubzy has officially declared you " + adjective + " enough to be responsible for the " + noun + "!");
   console.log("You must report to the " + place + " for your first day. Travel arrangements will be emailed shortly.");
   console.log("Wubzy has also approved your emergency supply of " + food + " to celebrate!");
   console.log("DO NOT disappoint the cat.\n");
-  let index = randomNumber(0, closings.length - 1);
-  console.log(closings[index]);
+  
+// choose a random closing message
+  let index = randomNumber(0, closingList.length - 1);
+  console.log(closingList[index]);
 }
 
 // define second card
