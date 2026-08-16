@@ -1,4 +1,4 @@
-# Wubzy's Greeting Card Generator
+# Wubzy's Words of Wonder Generator
 
 Fill in the blanks, make a card and discover a surprise after five cards.
 
