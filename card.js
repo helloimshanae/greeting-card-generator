@@ -14,12 +14,12 @@ let bonusLine = document.getElementById("bonus-line");
 
 // define closing messages
 let closings = [
-	"Meow for now.",
-	"Sincerely, the cat",
+	"Meow for now!",
+	"Keep Shining!",
 	"Love, Wubzy",
-	"Stay Pawwsome",
-	"Don't forget the snackies",
-	"Stay Chaotic",
+	"Stay Pawwsome!",
+	"Sending Good Vibes!",
+	"Keep Being Amazing!",
 ];
 
 // define cards made
@@ -42,11 +42,11 @@ function makeCard() {
 // display card message
 	cardText.textContent = 
 		"Meow " + friendName + ",\n" +
-		"Wubzy has officially declared you " + adjective + " enough to be responsible for the " + noun + "!\n" +
-		"You must report to the " + place + " for your first day. Travel arrangements will be emailed shortly.\n" +
-		"Wubzy has also approved your emergency supply of " + food + " to celebrate!\n" +
-		"DO NOT disappoint the cat.";
-		
+		"Wubzy thinks you are " + adjective + " enough to take on something wonderful.\n" +
+		"May your next adventure take you all the way to the " + place + ", with plenty of " + noun + " along the way.\n" +
+		"And of course, don't forget to celebrate with some " + food + " !\n" +
+		"Keep being amazing.";
+	
 		
 // choose a random closing message
 	closingText.textContent = 

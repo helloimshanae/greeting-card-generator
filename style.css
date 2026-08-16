@@ -1,13 +1,22 @@
 /* Page layout */
 body {
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0.5rem solid gold;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: #fffdf5;
 }
 
 /* Page header */
 header {
   text-align: center;
+  font-size: 30px;
   margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-shadow: 3px 3px 5px gold;
 }
 
 /* Main sections */
@@ -19,19 +28,25 @@ main {
 /* Card order section */
 #order-section {
   padding: 1.5rem;
+  border-radius: 15px;
 }
 
 /* Generated card */
 #card-section article {
   min-height: 200px;
+  padding: 2rem;
+  border: 2px solid gold;
+  border-radius: 15px;
+  background-color: white;
 }
 
 /* Card text */
 #card-text {
   white-space: pre-line;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: courier;
+  line-height: 1.6;
 }
 
 /* Random closing */
@@ -39,18 +54,28 @@ main {
   font-weight: bold;
   text-align: center;
   font-size: 2rem;
+  margin-top: 1.5rem;
 }
 
 /* Bonus message */
 #bonus-line {
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* Buttons */
+/* https://www.w3schools.com/css/css_important.asp?utm_source=chatgpt.com */
 button {
+  background-color: gold !important;
+  color: black !important;
+  border: 2px solid goldenrod !important;
   margin-right: 0.5rem;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: goldenrod !important;
 }
 
 /* Footer */
