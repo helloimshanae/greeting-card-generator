@@ -8,4 +8,4 @@ Fill in the blanks, make a card and discover a surprise after five cards.
 
 ## Live
 
-- Coming soon
+https://helloimshanae.github.io/greeting-card-generator/
