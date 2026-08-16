@@ -9,6 +9,7 @@ let cardText = document.getElementById("card-text");
 let closingText = document.getElementById("closing-text");
 let surpriseButton = document.getElementById("surprise-button");
 let cardSection = document.getElementById("card-section");
+let resetButton = document.getElementById("reset-button");
 
 // define closing messages
 let closings = [
@@ -54,6 +55,16 @@ function surpriseMe() {
 	closingText.textContent = closings[index];
 }
 
+function resetGenerator() {
+	nameInput.value = "";
+	adjectiveInput.value = "";
+	nounInput.value = "";
+	placeInput.value = "";
+	foodInput.value = "";
+	cardSection.hidden = true;
+}
+
 // define buttons
 makeButton.addEventListener("click", makeCard);
 surpriseButton.addEventListener("click", surpriseMe);
+resetButton.addEventListener("click", resetGenerator);
