@@ -10,6 +10,7 @@ let closingText = document.getElementById("closing-text");
 let surpriseButton = document.getElementById("surprise-button");
 let cardSection = document.getElementById("card-section");
 let resetButton = document.getElementById("reset-button");
+let bonusLine = document.getElementById("bonus-line");
 
 // define closing messages
 let closings = [
@@ -20,6 +21,9 @@ let closings = [
 	"Don't forget the snackies",
 	"Stay Chaotic",
 ];
+
+// define cards made
+let cardsMade = 0;
 
 // define random closing message
 function randomNumber(a, b) {
@@ -47,6 +51,12 @@ function makeCard() {
 // choose a random closing message
 	closingText.textContent = 
 	  closings[randomNumber(0, closings.length - 1)];
+	  
+	cardsMade = cardsMade + 1;
+	
+	if (cardsMade >= 5) {
+		bonusLine.hidden = false;
+	}
 }
 
 // define surprise button
