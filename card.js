@@ -8,6 +8,7 @@ let makeButton = document.getElementById("make-button");
 let cardText = document.getElementById("card-text");
 let closingText = document.getElementById("closing-text");
 let surpriseButton = document.getElementById("surprise-button");
+let cardSection = document.getElementById("card-section");
 
 // define closing messages
 let closings = [
@@ -26,6 +27,7 @@ function randomNumber(a, b) {
 
 // define card
 function makeCard() {
+	cardSection.hidden = false;
 	let friendName = nameInput.value;
 	let adjective = adjectiveInput.value; 
 	let noun = nounInput.value;
