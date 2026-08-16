@@ -1,0 +1,60 @@
+/* Page layout */
+body {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Page header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Main sections */
+main {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Card order section */
+#order-section {
+  padding: 1.5rem;
+}
+
+/* Generated card */
+#card-section article {
+  min-height: 200px;
+}
+
+/* Card text */
+#card-text {
+  white-space: pre-line;
+  text-align: center;
+  font-size: 1rem;
+  font-family: courier;
+}
+
+/* Random closing */
+#closing-text {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Bonus message */
+#bonus-line {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Buttons */
+button {
+  margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
