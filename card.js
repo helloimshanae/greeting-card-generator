@@ -1,4 +1,4 @@
-// 
+// HTML elements
 let nameInput = document.getElementById("name-input");
 let adjectiveInput = document.getElementById("adjective-input");
 let nounInput = document.getElementById("noun-input");
@@ -7,6 +7,7 @@ let foodInput = document.getElementById("food-input");
 let makeButton = document.getElementById("make-button");
 let cardText = document.getElementById("card-text");
 let closingText = document.getElementById("closing-text");
+let surpriseButton = document.getElementById("surprise-button");
 
 // define closing messages
 let closings = [
@@ -31,6 +32,7 @@ function makeCard() {
 	let place = placeInput.value;
 	let food = foodInput.value;
 	
+// display card message
 	cardText.textContent = 
 		"Meow " + friendName + ",\n" +
 		"Wubzy has officially declared you " + adjective + " enough to be responsible for the " + noun + "!\n" +
@@ -41,7 +43,15 @@ function makeCard() {
 		
 // choose a random closing message
 	closingText.textContent = 
-	  closings[randomNumber(0, closings.length - 1)]
+	  closings[randomNumber(0, closings.length - 1)];
 }
 
+// define surprise button
+function surpriseMe() {
+	let index = randomNumber(0, closings.length - 1);
+	closingText.textContent = closings[index];
+}
+
+// define buttons
 makeButton.addEventListener("click", makeCard);
+surpriseButton.addEventListener("click", surpriseMe);

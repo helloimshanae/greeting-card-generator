@@ -1,61 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
+
 <head>
-  <!-- charset, viewport, your own <title>, the Pico line -->
+<!-- page setup -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Wubzy's Greeting Card Generator</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
 </head>
 <body>
+
   <header>
-    <!-- your page's name goes here -->
+<!-- page header -->
 	<h1>Wubzy's Greeting Card Generator!</h1>
   </header>
   
-  
-  <main>
-  
-    <!-- the blanks and the card go here — that's the next step -->
-<section id="order-section">
-  <h2>Order a card</h2>
-  <label>A Name
-    <input id="name-input" type="text" />
-  </label>
-  <!-- 1) Two more labeled blanks, same shape as the name:
-       an adjective (id: adjective-input), then a noun (id: noun-input) -->
-  <label>An Adjective
-	<input id="adjective-input" type="text" />
-  </label>
-  <label>A Noun
-    <input id="noun-input" type="text" />
-  </label>
-   <label>Favorite Place
-    <input id="place-input" type="text" />
-  </label>
-   <label>Favorite Food
-    <input id="food-input" type="text" />
-  </label>
-   <!-- 2) The button: Make my card — type="button", id: make-button -->
-   <button type="button" id="make-button">Make my Card</button>
-</section>
-<section id="card-section">
-  <article>
-    <!-- 3) A p with id card-text, holding a placeholder line like
-         "Your card will appear here." -->
-	<p id="card-text">Your card will appear here.</p>
-	<p id="closing-text"></p>
-  </article>
-</section>
-	
-  </main>
+<main>
+<!-- card order section -->
+	<section id="order-section">
+	  <h2>Order a card</h2>
+<!-- name input -->
+	  <label>A Name
+		<input id="name-input" type="text" />
+	  </label>
+<!-- adjective input -->
+	  <label>An Adjective
+		<input id="adjective-input" type="text" />
+	  </label>
+<!-- noun input -->
+	  <label>A Noun
+		<input id="noun-input" type="text" />
+	  </label>
+<!-- place input -->
+	   <label>Favorite Place
+		<input id="place-input" type="text" />
+	  </label>
+<!-- food input -->
+	   <label>Favorite Food
+		<input id="food-input" type="text" />
+	  </label>
+<!-- make card button -->
+	   <button type="button" id="make-button">Make my Card</button>
+	</section>
+<!-- generated card section -->
+	<section id="card-section">
+	  <article>
+<!-- generated card text -->
+		<p id="card-text">Your card will appear here.</p>
+<!-- random closing -->
+		<p id="closing-text"></p>
+<!-- surprise button -->
+		<button type="button" id="surprise-button">Surprise ME</button>
+	  </article>
+	</section>	
+</main>
   
   
   <footer>
-    <!-- the made-by line goes here -->
+<!-- page footer -->
 	<p>Made by Shanae, 2026</p>
   </footer>
 
+<!-- JavaScript file -->
   <script src="card.js"></script>
 </body>
 </html>
